@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tcsionProject.Stage3.TestLogin3">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="tearDown"/>
+          <include name="validLoginTC004"/>
+          <include name="onSetup"/>
+        </methods>
+      </class> <!-- tcsionProject.Stage3.TestLogin3 -->
+      <class name="tcsionProject.Stage3.TestBookings3">
+        <methods>
+          <include name="VerifyWeb"/>
+          <include name="BookVerificationTC006"/>
+          <include name="BookingsBtn"/>
+          <include name="BookVerificationTC007"/>
+          <include name="BookVerificationTC008"/>
+          <include name="quitBrowser"/>
+          <include name="tearDown"/>
+          <include name="onSetup"/>
+        </methods>
+      </class> <!-- tcsionProject.Stage3.TestBookings3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

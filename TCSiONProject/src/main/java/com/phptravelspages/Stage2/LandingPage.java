@@ -1,5 +1,6 @@
 package com.phptravelspages.Stage2;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -79,7 +80,9 @@ public class LandingPage {
 		  hotels.click();
 		  //city.sendKeys("Dubai,United Arab Emirates");
 		  downarrow.click();
-		  city.sendKeys("Dubai,United Arab Emirates");
+		  city.sendKeys("Dubai");
+		  Thread.sleep(5000);
+		  driver.findElement(By.xpath("/html/body/span/span/span[2]/ul/li[1]")).click();
 		  Thread.sleep(2000);
 		  search.click();
 	  }

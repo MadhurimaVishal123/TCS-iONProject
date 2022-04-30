@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tcsionProject.Stage4.TestLogin4">
+      <class name="tcsionProject.Stage4.TestLanding4">
         <methods>
-          <include name="invalidLoginTC001"/>
+          <include name="VerifyDash"/>
+          <include name="Verifytour4"/>
+          <include name="Verifybooking4"/>
           <include name="quitBrowser"/>
           <include name="tearDown"/>
           <include name="onSetup"/>
-          <include name="invalidLoginTC002"/>
-          <include name="invalidLoginTC003"/>
-          <include name="validLoginTC004"/>
         </methods>
-      </class> <!-- tcsionProject.Stage4.TestLogin4 -->
+      </class> <!-- tcsionProject.Stage4.TestLanding4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

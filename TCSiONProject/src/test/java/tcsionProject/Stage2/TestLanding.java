@@ -8,7 +8,7 @@ import com.phptravelspages.Stage2.LandingPage;
 public class TestLanding extends TestBase {
 	
 	LandingPage objlandg;
-	@Test(priority=5)
+	@Test(priority=9)
 	public void verifyhome() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickHome();
@@ -16,42 +16,42 @@ public class TestLanding extends TestBase {
 //	    String actualTitle = driver.getTitle();
 //	    Assert.assertEquals(expectedTitle,actualTitle);
 	}
-	@Test(priority=6)
+	@Test(priority=10)
 	public void verifyhotels() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickHotels();
 	}
-	@Test(priority=7)
+	@Test(priority=11)
 	public void verifyflights() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickFlights();
 	}
-	@Test(priority=8)
+	@Test(priority=12)
 	public void verifytours() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickTours();
 	}
-	@Test(priority=9)
+	@Test(priority=13)
 	public void verifyvisa() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickVisa();
 	}
-	@Test(priority=10)
+	@Test(priority=14)
 	public void verifyblog() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickBlog();
 	}
-	@Test(priority=11)
+	@Test(priority=15)
 	public void verifyoffers() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickOffers();
 	}
-	@Test(priority=12)
+	@Test(priority=16)
 	public void verifycompany() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickCompany();
 	}
-	@Test(priority=13)
+	@Test(priority=17)
 	public void verifyusd() {
 		objlandg= new LandingPage(driver);
 		objlandg.clickUsd();
@@ -62,7 +62,7 @@ public class TestLanding extends TestBase {
 		//currency1.selectByVisibleText("INR");
 		//currency1.selectByIndex(6);
 	}
-	@Test(priority=14)
+	@Test(priority=18)
 	public void verifysearch() throws InterruptedException {
 		objlandg= new LandingPage(driver);
          objlandg.searchHotels();

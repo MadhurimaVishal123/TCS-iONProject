@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="tcsionProject.Stage2.TestLogin2"/>
-      <class name="tcsionProject.Stage2.TestLanding"/>
+      <class name="tcsionProject.Stage2.TestAddFund2"/>
+       <class name="tcsionProject.Stage2.TestLanding"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

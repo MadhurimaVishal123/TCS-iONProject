@@ -59,4 +59,15 @@ WebDriver driver;
 	public void clickWeb() {
 		web.click();
 	}
+//	@FindBy(css=".border-warning > div:nth-child(1) > div:nth-child(1)")
+//	private WebElement pend3;
+//	public void clickpend3() {
+//		pend3.click();
+//	}
+//	@FindBy(id="booking_status")
+//	private WebElement bookstatus3;
+//	public void clickbookstatus3() {
+//		bookstatus3.click();
+//		bookstatus3.selectByVisibleText
+//	}
 }

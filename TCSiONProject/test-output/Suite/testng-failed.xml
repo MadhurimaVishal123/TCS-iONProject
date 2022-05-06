@@ -3,14 +3,36 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tcsionProject.Stage4.TestLogin4">
+      <class name="tcsionProject.Stage1.TestAddFund">
         <methods>
+          <include name="Log"/>
+          <include name="addfund"/>
+          <include name="myprofile"/>
           <include name="quitBrowser"/>
           <include name="tearDown"/>
           <include name="onSetup"/>
-          <include name="invalidLoginTC003"/>
         </methods>
-      </class> <!-- tcsionProject.Stage4.TestLogin4 -->
+      </class> <!-- tcsionProject.Stage1.TestAddFund -->
+      <class name="tcsionProject.Stage1.TestLogin">
+        <methods>
+          <include name="logindemo1"/>
+          <include name="invalidLoginTC003"/>
+          <include name="invalidLoginTC001"/>
+          <include name="quitBrowser"/>
+          <include name="tearDown"/>
+          <include name="invalidLoginTC002"/>
+          <include name="validLoginTC004"/>
+          <include name="onSetup"/>
+        </methods>
+      </class> <!-- tcsionProject.Stage1.TestLogin -->
+      <class name="tcsionProject.Stage1.TestBookings">
+        <methods>
+          <include name="mybookings"/>
+          <include name="quitBrowser"/>
+          <include name="tearDown"/>
+          <include name="onSetup"/>
+        </methods>
+      </class> <!-- tcsionProject.Stage1.TestBookings -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

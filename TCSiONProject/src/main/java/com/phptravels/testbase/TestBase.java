@@ -109,6 +109,6 @@ public void onSetup() {
     public void quitBrowser() throws IOException, InterruptedException {
     	Thread.sleep(5000);
         driver.quit();
+   
     }
-
 }

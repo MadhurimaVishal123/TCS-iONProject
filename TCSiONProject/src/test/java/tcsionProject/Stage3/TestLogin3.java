@@ -26,7 +26,7 @@ public class TestLogin3 extends TestBase {
 		 //driver.findElement(By.id("cookie_stop")).click();
 	}
 	
-	@Test(priority=1,enabled=false)
+	@Test(priority=1)
 	public void invalidLoginTC001() throws IOException, InterruptedException {
 		 //Create Login Page object
 	    objlogin3 = new LoginPage3(driver);
@@ -48,7 +48,7 @@ public class TestLogin3 extends TestBase {
 	   
 	}
 
-	@Test(priority=2,enabled=false)
+	@Test(priority=2)
 	public void invalidLoginTC002() throws IOException, InterruptedException {
 		 //Create Login Page object
 	    objlogin3 = new LoginPage3(driver);
@@ -68,7 +68,7 @@ public class TestLogin3 extends TestBase {
 	    Assert.assertEquals(ActualTittle, expTittle);
 	}
 	
-	@Test(priority=3,enabled=false)
+	@Test(priority=3)
 	public void invalidLoginTC003() throws IOException, InterruptedException {
 		 //Create Login Page object
 	    objlogin3 = new LoginPage3(driver);

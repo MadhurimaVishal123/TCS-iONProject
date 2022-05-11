@@ -67,5 +67,10 @@ public class TestLanding extends TestBase {
 		objlandg= new LandingPage(driver);
          objlandg.searchHotels();
 	}
+//	//@Test(priority=19)
+//	public void returnHome() {
+//		driver.get(driverPath1driverPath1"https://www.phptravels.com";)
+//		
+//	}
 
 }

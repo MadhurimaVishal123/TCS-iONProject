@@ -104,7 +104,7 @@ public class TestLogin3 extends TestBase {
 	    Thread.sleep(8000);
 	    String ActualTittle = driver.getTitle();
 	    System.out.println(ActualTittle);
-	    String expTittle = AutomationConstants.AdminDashboardTitle;
+	    String expTittle = AutomationConstants.adminDASHBOARDPAGETITLE;
 	    Assert.assertEquals(ActualTittle, expTittle);
 	    System.out.println("***Login Successful***");
 	}

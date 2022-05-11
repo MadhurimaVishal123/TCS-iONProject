@@ -1,5 +1,6 @@
 package tcsionProject.Stage4;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -44,5 +45,5 @@ public class TestLanding4 extends TestBase{
 		land4.clickBooking4();
 		
 	}
+	
 }
-

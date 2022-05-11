@@ -1,143 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="10" passed="8" failed="0" skipped="0">
+<testng-results ignored="4" total="13" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-11T21:55:42 IST" name="Suite" finished-at="2022-05-11T21:56:46 IST" duration-ms="64229">
+  <suite started-at="2022-05-11T23:51:58 IST" name="Suite" finished-at="2022-05-11T23:53:09 IST" duration-ms="71484">
     <groups>
     </groups>
-    <test started-at="2022-05-11T21:55:42 IST" name="Test" finished-at="2022-05-11T21:56:46 IST" duration-ms="64229">
-      <class name="tcsionProject.Stage4.TestLogin4">
-        <test-method is-config="true" signature="onSetup()[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:55:42 IST" name="onSetup" finished-at="2022-05-11T21:55:50 IST" duration-ms="8366" status="PASS">
+    <test started-at="2022-05-11T23:51:58 IST" name="Test" finished-at="2022-05-11T23:53:09 IST" duration-ms="71484">
+      <class name="tcsionProject.Stage1.TestBookings">
+        <test-method signature="mybookings()[pri:5, instance:tcsionProject.Stage1.TestBookings@272113c4]" started-at="2022-05-11T23:52:39 IST" name="mybookings" finished-at="2022-05-11T23:52:50 IST" duration-ms="11228" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5) > div:nth-child(1) > a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-F5C4QKDE', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22320, moz:profile: C:\Users\vishp\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1208dde3-8786-4a8e-990a-b0ee06c401b9
+*** Element info: {Using=css selector, value=.table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5) > div:nth-child(1) > a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5) > div:nth-child(1) > a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-F5C4QKDE', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22320, moz:profile: C:\Users\vishp\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1208dde3-8786-4a8e-990a-b0ee06c401b9
+*** Element info: {Using=css selector, value=.table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5) > div:nth-child(1) > a}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at com.phptravelspages.Stage1.MyBookingsPage.setViewVoucherbtn(MyBookingsPage.java:32)
+at tcsionProject.Stage1.TestBookings.mybookings(TestBookings.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mybookings -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestBookings@272113c4]" started-at="2022-05-11T23:52:50 IST" name="tearDown" finished-at="2022-05-11T23:52:51 IST" duration-ms="75" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mybookings status=FAILURE method=TestBookings.mybookings()[pri:5, instance:tcsionProject.Stage1.TestBookings@272113c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tcsionProject.Stage1.TestBookings -->
+      <class name="tcsionProject.Stage1.TestAddFund">
+        <test-method signature="addfund()[pri:6, instance:tcsionProject.Stage1.TestAddFund@2d52216b]" started-at="2022-05-11T23:52:51 IST" name="addfund" finished-at="2022-05-11T23:52:54 IST" duration-ms="3036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addfund -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestAddFund@2d52216b]" started-at="2022-05-11T23:52:54 IST" name="tearDown" finished-at="2022-05-11T23:52:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addfund status=SUCCESS method=TestAddFund.addfund()[pri:6, instance:tcsionProject.Stage1.TestAddFund@2d52216b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="myprofile()[pri:7, instance:tcsionProject.Stage1.TestAddFund@2d52216b]" started-at="2022-05-11T23:52:54 IST" name="myprofile" finished-at="2022-05-11T23:53:02 IST" duration-ms="8573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myprofile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestAddFund@2d52216b]" started-at="2022-05-11T23:53:02 IST" name="tearDown" finished-at="2022-05-11T23:53:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=myprofile status=SUCCESS method=TestAddFund.myprofile()[pri:7, instance:tcsionProject.Stage1.TestAddFund@2d52216b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Log()[pri:8, instance:tcsionProject.Stage1.TestAddFund@2d52216b]" started-at="2022-05-11T23:53:02 IST" name="Log" finished-at="2022-05-11T23:53:04 IST" duration-ms="1857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Log -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestAddFund@2d52216b]" started-at="2022-05-11T23:53:04 IST" name="tearDown" finished-at="2022-05-11T23:53:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Log status=SUCCESS method=TestAddFund.Log()[pri:8, instance:tcsionProject.Stage1.TestAddFund@2d52216b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tcsionProject.Stage1.TestAddFund -->
+      <class name="tcsionProject.Stage1.TestLogin">
+        <test-method is-config="true" signature="onSetup()[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:51:58 IST" name="onSetup" finished-at="2022-05-11T23:52:04 IST" duration-ms="6199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onSetup -->
-        <test-method signature="logindemo4()[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:55:50 IST" name="logindemo4" finished-at="2022-05-11T21:55:54 IST" duration-ms="3639" status="PASS">
+        <test-method signature="logindemo1()[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:04 IST" name="logindemo1" finished-at="2022-05-11T23:52:08 IST" duration-ms="3763" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logindemo4 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:55:54 IST" name="tearDown" finished-at="2022-05-11T21:55:54 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- logindemo1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:08 IST" name="tearDown" finished-at="2022-05-11T23:52:08 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logindemo4 status=SUCCESS method=TestLogin4.logindemo4()[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0] output={null}]]]>
+                <![CDATA[[TestResult name=logindemo1 status=SUCCESS method=TestLogin.logindemo1()[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="invalidLoginTC001()[pri:1, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:55:54 IST" name="invalidLoginTC001" finished-at="2022-05-11T21:56:02 IST" duration-ms="7550" status="PASS">
+        <test-method signature="invalidLoginTC001()[pri:1, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:08 IST" name="invalidLoginTC001" finished-at="2022-05-11T23:52:16 IST" duration-ms="7854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTC001 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:02 IST" name="tearDown" finished-at="2022-05-11T21:56:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:16 IST" name="tearDown" finished-at="2022-05-11T23:52:16 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLoginTC001 status=SUCCESS method=TestLogin4.invalidLoginTC001()[pri:1, instance:tcsionProject.Stage4.TestLogin4@b9b00e0] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLoginTC001 status=SUCCESS method=TestLogin.invalidLoginTC001()[pri:1, instance:tcsionProject.Stage1.TestLogin@506ae4d4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="invalidLoginTC002()[pri:2, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:02 IST" name="invalidLoginTC002" finished-at="2022-05-11T21:56:08 IST" duration-ms="6480" status="PASS">
+        <test-method signature="invalidLoginTC002()[pri:2, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:16 IST" name="invalidLoginTC002" finished-at="2022-05-11T23:52:24 IST" duration-ms="8654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTC002 -->
-        <test-method signature="invalidLoginTC003()[pri:3, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:08 IST" name="invalidLoginTC003" finished-at="2022-05-11T21:56:15 IST" duration-ms="7392" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:24 IST" name="tearDown" finished-at="2022-05-11T23:52:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTC002 status=SUCCESS method=TestLogin.invalidLoginTC002()[pri:2, instance:tcsionProject.Stage1.TestLogin@506ae4d4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="invalidLoginTC003()[pri:3, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:24 IST" name="invalidLoginTC003" finished-at="2022-05-11T23:52:31 IST" duration-ms="6838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTC003 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:08 IST" name="tearDown" finished-at="2022-05-11T21:56:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:31 IST" name="tearDown" finished-at="2022-05-11T23:52:31 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidLoginTC002 status=SUCCESS method=TestLogin4.invalidLoginTC002()[pri:2, instance:tcsionProject.Stage4.TestLogin4@b9b00e0] output={null}]]]>
+                <![CDATA[[TestResult name=invalidLoginTC003 status=SUCCESS method=TestLogin.invalidLoginTC003()[pri:3, instance:tcsionProject.Stage1.TestLogin@506ae4d4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:16 IST" name="tearDown" finished-at="2022-05-11T21:56:16 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidLoginTC003 status=SUCCESS method=TestLogin4.invalidLoginTC003()[pri:3, instance:tcsionProject.Stage4.TestLogin4@b9b00e0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="validLoginTC004()[pri:4, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:16 IST" name="validLoginTC004" finished-at="2022-05-11T21:56:23 IST" duration-ms="7042" status="PASS">
+        <test-method signature="validLoginTC004()[pri:4, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:31 IST" name="validLoginTC004" finished-at="2022-05-11T23:52:39 IST" duration-ms="8037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTC004 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:23 IST" name="tearDown" finished-at="2022-05-11T21:56:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:52:39 IST" name="tearDown" finished-at="2022-05-11T23:52:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLoginTC004 status=SUCCESS method=TestLogin4.validLoginTC004()[pri:4, instance:tcsionProject.Stage4.TestLogin4@b9b00e0] output={null}]]]>
+                <![CDATA[[TestResult name=validLoginTC004 status=SUCCESS method=TestLogin.validLoginTC004()[pri:4, instance:tcsionProject.Stage1.TestLogin@506ae4d4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tcsionProject.Stage4.TestLogin4@b9b00e0]" started-at="2022-05-11T21:56:40 IST" name="quitBrowser" finished-at="2022-05-11T21:56:46 IST" duration-ms="5918" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tcsionProject.Stage1.TestLogin@506ae4d4]" started-at="2022-05-11T23:53:04 IST" name="quitBrowser" finished-at="2022-05-11T23:53:09 IST" duration-ms="5255" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-F5C4QKDE', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22320, moz:profile: C:\Users\vishp\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1208dde3-8786-4a8e-990a-b0ee06c401b9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-F5C4QKDE', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22320, moz:profile: C:\Users\vishp\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1208dde3-8786-4a8e-990a-b0ee06c401b9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at com.phptravels.testbase.TestBase.quitBrowser(TestBase.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tcsionProject.Stage4.TestLogin4 -->
-      <class name="tcsionProject.Stage4.TestLanding4">
-        <test-method signature="VerifyDash()[pri:5, instance:tcsionProject.Stage4.TestLanding4@73e9cf30]" started-at="2022-05-11T21:56:23 IST" name="VerifyDash" finished-at="2022-05-11T21:56:28 IST" duration-ms="5217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDash -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLanding4@73e9cf30]" started-at="2022-05-11T21:56:28 IST" name="tearDown" finished-at="2022-05-11T21:56:28 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyDash status=SUCCESS method=TestLanding4.VerifyDash()[pri:5, instance:tcsionProject.Stage4.TestLanding4@73e9cf30] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="Verifytour4()[pri:6, instance:tcsionProject.Stage4.TestLanding4@73e9cf30]" started-at="2022-05-11T21:56:28 IST" name="Verifytour4" finished-at="2022-05-11T21:56:38 IST" duration-ms="10145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifytour4 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLanding4@73e9cf30]" started-at="2022-05-11T21:56:38 IST" name="tearDown" finished-at="2022-05-11T21:56:38 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verifytour4 status=SUCCESS method=TestLanding4.Verifytour4()[pri:6, instance:tcsionProject.Stage4.TestLanding4@73e9cf30] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="Verifybooking4()[pri:7, instance:tcsionProject.Stage4.TestLanding4@73e9cf30]" started-at="2022-05-11T21:56:38 IST" name="Verifybooking4" finished-at="2022-05-11T21:56:40 IST" duration-ms="2372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifybooking4 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tcsionProject.Stage4.TestLanding4@73e9cf30]" started-at="2022-05-11T21:56:40 IST" name="tearDown" finished-at="2022-05-11T21:56:40 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Verifybooking4 status=SUCCESS method=TestLanding4.Verifybooking4()[pri:7, instance:tcsionProject.Stage4.TestLanding4@73e9cf30] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tcsionProject.Stage4.TestLanding4 -->
+      </class> <!-- tcsionProject.Stage1.TestLogin -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

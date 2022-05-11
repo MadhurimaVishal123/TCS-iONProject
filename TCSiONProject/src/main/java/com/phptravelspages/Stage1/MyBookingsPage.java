@@ -13,7 +13,7 @@ public class MyBookingsPage {
 	
 	@FindBy(css="#fadein > div.sidebar-nav > div > div.sidebar-menu-wrap > ul > li:nth-child(2) > a")
 	private WebElement bookingsbtn;
-	@FindBy(css="#fadein > section.dashboard-area > div > div.dashboard-main-content > div > div.row > div > div > div.form-content > div > table > tbody > tr:nth-child(1) > td:nth-child(5) > div > a")
+	@FindBy(css=".table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5) > div:nth-child(1) > a")
 	private WebElement viewvoucher;
 	@FindBy(css="div.col-md-6:nth-child(1) > ul")
 	private WebElement VouchrConfirm;

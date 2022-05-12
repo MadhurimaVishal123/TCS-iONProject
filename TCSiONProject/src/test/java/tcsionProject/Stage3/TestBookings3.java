@@ -1,5 +1,7 @@
 package tcsionProject.Stage3;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -30,7 +32,11 @@ BookingsPage3 objbook;
 			Thread.sleep(3000);
 			System.out.println("Paid Bookings Count: "+PaidBC);
 			driver.findElement(By.xpath("/html/body/div[2]/div[2]/main/div/div[2]"
-					+ "/div/div/div[2]/div/table/tbody/tr[1]/td[14]/a")).click();}
+					+ "/div/div/div[2]/div/table/tbody/tr[1]/td[14]/a")).click();
+			ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+			Thread.sleep(2000);
+			 driver.switchTo().window(tabs.get(0));
+			}
 		}
 	@Test(priority = 7)
 	public void BookVerificationTC007() throws InterruptedException {
@@ -43,9 +49,9 @@ BookingsPage3 objbook;
 		else {	
 			objbook.setCancelledBook();
 			System.out.println("Cancelled Bookings Count: "+CancelBC);
-			driver.findElement(By.xpath("/html/body/div[2]/div[2]/main/div/div[2]"
-					+ "/div/div/div[2]/div/table/tbody/tr/td[14]/button")).click();
-		Thread.sleep(2000);
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("/html/body/div[2]/div[2]/main/div/div[2]/div/div/div[2]/div/table/tbody/tr/td[15]/button/i")).click();
+		Thread.sleep(3000);
 		// not deleting the booking, because other users need it
 		driver.switchTo().alert().dismiss();
 		}

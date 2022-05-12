@@ -43,6 +43,10 @@ public class TestLanding4 extends TestBase{
 		land4 = new LandingPage4(driver);
 		Thread.sleep(2000);
 		land4.clickBooking4();
+		String ActualTittle = driver.getTitle();
+	    System.out.println(ActualTittle);
+	    String expTittle = "SUPPLIER_BOOKINGS_TITLE";
+	    Assert.assertEquals(ActualTittle, expTittle);
 		
 	}
 	

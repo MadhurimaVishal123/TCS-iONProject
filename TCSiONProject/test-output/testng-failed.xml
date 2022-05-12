@@ -3,14 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tcsionProject.Stage1.TestBookings">
+      <class name="tcsionProject.Stage4.TestLanding4">
         <methods>
-          <include name="mybookings"/>
+          <include name="Verifybooking4"/>
           <include name="quitBrowser"/>
           <include name="tearDown"/>
           <include name="onSetup"/>
         </methods>
-      </class> <!-- tcsionProject.Stage1.TestBookings -->
+      </class> <!-- tcsionProject.Stage4.TestLanding4 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
